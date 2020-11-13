@@ -1,8 +1,10 @@
 <template>
   <div id="APP">
-    <router-view></router-view>
- 
-    <tab-bar> 
+    <keep-alive>
+      <router-view />
+    </keep-alive>
+
+    <tab-bar>
       <tab-bar-item path="/home" actionColor="red">
         <img slot="item-icon" src="./assets/img/tabbar/home.png" alt="" />
         <img
@@ -54,9 +56,8 @@ export default {
   name: "App",
   components: {
     TabBar,
-    TabBarItem
-  }
- 
+    TabBarItem,
+  },
 };
 </script>
 

@@ -17,7 +17,8 @@ export default {
   },
   methods: {
       itemClick(index){
-          this.currentIndex = index
+          this.currentIndex = index,
+          this.$emit('tabClick', index)
       }
   },
   props: {
@@ -35,12 +36,15 @@ export default {
   width: 100%;
   height: 50px;
   display: flex;
+  /* background-color: red; */
+  
 }
 .tab-control div {
   display: flex;
   flex: 1;
   align-items: center;
   justify-content: center;
+  
 }
 .tab-control span {
     padding:5px 10px

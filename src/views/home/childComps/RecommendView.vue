@@ -24,12 +24,11 @@ export default {
 </script>
 <style scoped>
     .recommend{
-        width: 100%;
+        width:100vw;
         display: flex;
         text-align: center;
         font-size: 12px;
         border-bottom: 10px solid #eee; 
-        padding: 54px 0 20px 0
     }
     .recommend_item{
         flex:1
